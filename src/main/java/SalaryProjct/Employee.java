@@ -17,7 +17,7 @@ public void setBaseSalary(int baseSalary){
         }
     this.baseSalary = baseSalary;
 }
-public int getBaseSalary(){
+private int getBaseSalary(){
     return baseSalary;
 }
 
@@ -31,7 +31,7 @@ public void setHourlyRate(int hourlyRate){
     this.hourlyRate= hourlyRate;
 }
 
-    public int getHourlyRate() {
+    private int getHourlyRate() {
         return hourlyRate;
     }
 }
