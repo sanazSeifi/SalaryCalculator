@@ -22,6 +22,12 @@ public int getBaseSalary(){
 }
 
 public void setHourlyRate(int hourlyRate){
+    if (hourlyRate <= 0)
+        try {
+            throw new IllegalAccessException("HourlyRate cannot be zero or less");
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     this.hourlyRate= hourlyRate;
 }
 
