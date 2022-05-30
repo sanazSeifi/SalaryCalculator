@@ -2,7 +2,7 @@ package SalaryProjct;
 
 public class Employee {
     private int baseSalary;
-    public int hourlyRate;
+    private int hourlyRate;
 
 public int calculateWage(int extraHours) {
     return baseSalary + (extraHours * hourlyRate);
@@ -20,4 +20,12 @@ public void setBaseSalary(int baseSalary){
 public int getBaseSalary(){
     return baseSalary;
 }
+
+public void setHourlyRate(int hourlyRate){
+    this.hourlyRate= hourlyRate;
+}
+
+    public int getHourlyRate() {
+        return hourlyRate;
+    }
 }
