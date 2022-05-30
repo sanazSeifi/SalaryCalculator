@@ -13,7 +13,7 @@ public int calculateWage(int extraHours) {
     return baseSalary + (extraHours * hourlyRate);
 }
 
-public void setBaseSalary(int baseSalary){
+private void setBaseSalary(int baseSalary){
     if(baseSalary <= 0)
         try {
             throw new IllegalAccessException(" Salary cannot be Zero or less");
@@ -26,7 +26,7 @@ private int getBaseSalary(){
     return baseSalary;
 }
 
-public void setHourlyRate(int hourlyRate){
+private void setHourlyRate(int hourlyRate){
     if (hourlyRate <= 0)
         try {
             throw new IllegalAccessException("HourlyRate cannot be zero or less");
