@@ -9,8 +9,15 @@ public int calculateWage(int extraHours) {
 }
 
 public void setBaseSalary(int baseSalary){
-    if(baseSalary <= 0){
-        throw
-    }
+    if(baseSalary <= 0)
+        try {
+            throw new IllegalAccessException(" Salary cannot be Zero or less");
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    this.baseSalary = baseSalary;
+}
+public int getBaseSalary(){
+    return baseSalary;
 }
 }
