@@ -4,9 +4,12 @@ public class Employee {
     public int baseSalary;
     private int hourlyRate;
 
+    public static int numberOfEmployees;
+
     public Employee(int baseSalary, int hourlyRate){
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        numberOfEmployees ++;
     }
 
 public int calculateWage(int extraHours) {
