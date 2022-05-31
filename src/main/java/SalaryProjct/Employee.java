@@ -12,6 +12,10 @@ public class Employee {
         numberOfEmployees ++;
     }
 
+    public static void printNumberOfEmployees(){
+        new Employee(2_000, 30).calculateWage(20);
+        System.out.println(numberOfEmployees);
+    }
 public int calculateWage(int extraHours) {
     return baseSalary + (extraHours * hourlyRate);
 }public int calculateWage() {
